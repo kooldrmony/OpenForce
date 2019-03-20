@@ -8,7 +8,25 @@ class Box extends Component {
 				<h3>
     				Choose between small, medium, or large Swanson words of Wisdom!
     			</h3>
+    			<div id="container">
+					<div>
+						<button>
+							Small
+						</button>
+					</div>
+								<div>
+						<button>
+							Medium
+						</button>
+					</div>
+					<div>
+						<button>
+							Large
+						</button>
+					</div>
+				</div>
 			</div>
+
 			)
 	}
 }

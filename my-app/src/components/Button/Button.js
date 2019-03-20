@@ -6,7 +6,7 @@ class Button extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			show : true
+			show : false
 		}
 
 		this.toggleDiv = this.toggleDiv.bind(this)
@@ -14,7 +14,7 @@ class Button extends Component {
 
 	toggleDiv = () => {
 		const { show } = this.state;
-		this.setState({ show : !show })
+		this.setState({ show : true })
 	}
 	render() {
 		return (

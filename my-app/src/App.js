@@ -3,14 +3,24 @@ import Header from "./components/Header";
 import Button from "./components/Button";
 
 class App extends Component {
-  
-
-    toggleDiv = () => {
-      const { show } = this.state;
-      this.setState({ show : !show })
-
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false,
+    }
   }
+  componentDidMount() {
+    fetch('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isLoaded: true,
+          items: json,
+        })
+      })
+  }
+
   render() {
     return (
       <div className="App">
