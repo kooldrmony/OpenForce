@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from "./components/Header";
 import Button from "./components/Button";
-import Box from "./components/Box";
 
 class App extends Component {
   
@@ -17,7 +16,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <Button />
-        <Box />
       </div>
     );
   }

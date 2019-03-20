@@ -5,9 +5,9 @@ class Box extends Component {
 	render() {
 		return (
 			<div>
-				<p>
-					This is the context to show the optional buttons
-				</p>
+				<h3>
+    				Choose between small, medium, or large Swanson words of Wisdom!
+    			</h3>
 			</div>
 			)
 	}
