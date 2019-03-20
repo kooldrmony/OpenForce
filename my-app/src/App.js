@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import Header from "./components/Header";
 import Button from "./components/Button";
+import Box from "./components/Box";
 
 class App extends Component {
-  constructor( props ) {
-    super( props )
-    this.state = {
-      show: true
-    }
-    this.toggleDiv = this.toggleDiv.bind(this);
-    }
+  
 
     toggleDiv = () => {
       const { show } = this.state;
@@ -22,6 +17,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Button />
+        <Box />
       </div>
     );
   }
