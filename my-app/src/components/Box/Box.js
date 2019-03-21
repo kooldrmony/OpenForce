@@ -2,6 +2,36 @@ import React, { Component } from 'react';
 import "./Box.css";
 
 class Box extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			small : false,
+			medium : false, 
+			large : false, 
+		}
+		// this.handleSmall = this.handleSmall.bind(this);
+		// this.handleMedium = this.handleMedium.bind(this);
+		// this.handleLarge = this.handleLarge.bind(this);
+	}
+
+	componentWillUpdate() {
+
+		// handleSmall = () => {
+		// 	this.setState({
+		// 		small : true
+		// 	});
+		// }
+
+		// handleMedium = () => {
+
+		// }
+
+		// handleLarge = () => {
+
+		// }
+	}
+
+
 	render() {
 		return (
 			<div>
