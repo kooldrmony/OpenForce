@@ -10,11 +10,14 @@ class Quotes extends React.Component {
 	};
 
 	componentDidMount() {
-		axios.get('https://jsonplaceholder.typicode.com/users')
-		.then(res => {
-			console.log(res);
-			this.setState({ persons : res.data });
-		})
+		axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
+			.then(function (response) {
+				console.log(response)
+			})
+		// .then(res) => {
+		// 	console.log(res);
+		// 	this.setState({ persons : res.data });
+		// })
 	}
 
 	render() {
