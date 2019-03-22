@@ -10,21 +10,17 @@ class Quotes extends React.Component {
 		this.state = {
 			items: []
 		}
-
-	this.handleState = this.handleState.bind(this)
-
 	}
 
-	handleState() {
-		this.setState({ items: response.data[0] })
-	}
+	// handleState() {
+	// 	this.setState({ items: response.data[0] })
+	// }
 
 		componentDidMount() {
 
 			axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
 				.then(function (response) {
 					console.log(response.data);
-					this.setState({ items : response.data })
 				})
 				.catch(function (error) {
 					console.log(error);

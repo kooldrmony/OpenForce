@@ -2,12 +2,12 @@
 choose the size of quote they want*/
 
 import React, { Component } from 'react';
-import "./Box.css";
+import "./QuoteOption.css";
 import SmallButton from "../SmallButton";
 import MediumButton from "../MediumButton";
 import LargeButton from "../LargeButton";
 
-class Box extends Component {
+class QuoteOption extends Component {
 
 	render() {
 		return (
@@ -26,4 +26,4 @@ class Box extends Component {
 	}
 }
 
-export default Box;
+export default QuoteOption;

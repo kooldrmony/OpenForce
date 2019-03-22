@@ -1,6 +1,8 @@
+//This component is the button that asks the user to click on the button to get a quote
+
 import React, { Component } from "react";
 import "./Button.css";
-import Box from '../Box';
+import QuoteOption from '../QuoteOption';
 
 class Button extends Component {
 	constructor(props) {
@@ -15,7 +17,7 @@ class Button extends Component {
 	toggleDiv = () => {
 		this.setState({ show : true })
 	}
-	
+
 	render() {
 		return (
 			<div className="Button">
@@ -24,7 +26,7 @@ class Button extends Component {
 				</button>
 				<br />
 				<br />
-				{this.state.show && <Box />}
+				{this.state.show && <QuoteOption />}
 			</div>
 		)
 	}
