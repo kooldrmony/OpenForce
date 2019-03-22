@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://kooldrmony.github.io/OpenForce/",
   "dependencies": {
     "axios": "^0.18.0",
     "hubot-swanson": "^1.2.0",

@@ -23,15 +23,21 @@ class Quotes extends React.Component {
 				
 				axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
 					.then(function (response) {
-						console.log(response.data);
+						//currently logging the response in the console.
+						console.log(response.data[0]);
 	 				})
 					.catch(function (error) {
 						console.log(error);
 					})
 			};
 
-/*Create a method to take the chosen quote and use the .split method to count the number of words
-in the randomly selected quote to choose whether it is small, medium or large. */
+/*Next step Create a method to take the chosen quote and use the .split method to 
+count the number of words in the randomly selected quote to choose whether it is 
+small, medium or large. Create a handle method in each of the small, medium and large
+components to generate the quote based on which button is clicked*/
+
+
+
 	render() {
 		return (
 				<ul>
