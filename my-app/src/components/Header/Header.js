@@ -1,3 +1,5 @@
+//This component is the header of the application showing the title
+
 import React from "react";
 import "./Header.css";
 

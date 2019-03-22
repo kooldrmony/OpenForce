@@ -1,6 +1,9 @@
+/*This component is responsible for asking and giving the user an option to 
+choose the size of quote they want*/
+
 import React, { Component } from 'react';
 import "./Box.css";
-import Sbutton from "../Sbutton";
+import SmallButton from "../SmallButton";
 import MediumButton from "../MediumButton";
 import LargeButton from "../LargeButton";
 
@@ -13,7 +16,7 @@ class Box extends Component {
     				Choose between small, medium, or large Swanson words of Wisdom!
     			</h3>
     			<div id="container">
-    				<Sbutton />
+    				<SmallButton />
     				<MediumButton />
     				<LargeButton />
       			</div>
