@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./Box.css";
+import smallButton from "../smallButton";
 
 class Box extends Component {
 	constructor(props) {
@@ -35,16 +36,13 @@ class Box extends Component {
 	render() {
 		return (
 			<div>
+				<smallButton />
 				<h3>
     				Choose between small, medium, or large Swanson words of Wisdom!
     			</h3>
     			<div id="container">
+
 					<div>
-						<button>
-							Small
-						</button>
-					</div>
-								<div>
 						<button>
 							Medium
 						</button>

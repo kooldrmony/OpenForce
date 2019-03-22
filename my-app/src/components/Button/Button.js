@@ -13,7 +13,6 @@ class Button extends Component {
 	}
 
 	toggleDiv = () => {
-		const { show } = this.state;
 		this.setState({ show : true })
 	}
 	render() {
