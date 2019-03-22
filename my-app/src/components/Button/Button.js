@@ -15,6 +15,7 @@ class Button extends Component {
 	toggleDiv = () => {
 		this.setState({ show : true })
 	}
+	
 	render() {
 		return (
 			<div className="Button">
@@ -25,28 +26,8 @@ class Button extends Component {
 				<br />
 				{this.state.show && <Box />}
 			</div>
-			)
+		)
 	}
 } 
-
-
-// = props => (
-//   <div className="Button">
-//   	<button id="small">
-//   		Small
-//   	</button>
-//   	<br />
-//   	<br />
-//   	<button id="medium">
-//   		Medium
-//   	</button>
-//   	<br />
-//   	<br />
-//   	<button id="large">
-//   		Large
-//   	</button>
-
-//   </div>
-// );
 
 export default Button;
