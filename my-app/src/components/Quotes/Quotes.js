@@ -8,32 +8,35 @@ class Quotes extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			items: []
+			quotes: []
 		}
-	}
 
-	// handleState() {
-	// 	this.setState({ items: response.data[0] })
-	// }
+		this.quoteGenerator = this.quoteGenerator.bind(this)
+	}
 
 		componentDidMount() {
 
-			axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
-				.then(function (response) {
-					console.log(response.data);
-				})
-				.catch(function (error) {
-					console.log(error);
-				})
+			this.quoteGenerator();
 		}
 
+		quoteGenerator() {
+				
+				axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
+					.then(function (response) {
+						console.log(response.data);
+	 				})
+					.catch(function (error) {
+						console.log(error);
+					})
+			};
 
-
+/*Create a method to take the chosen quote and use the .split method to count the number of words
+in the randomly selected quote to choose whether it is small, medium or large. */
 	render() {
 		return (
 				<ul>
-					{this.state.items.map(item => (
-						<li key={item.data}>{item.data}</li>
+					{this.state.quotes.map(quote => (
+						<li>{quote.data[0]}</li>
 						))}
 				</ul>
 		)		
