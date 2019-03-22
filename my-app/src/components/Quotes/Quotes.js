@@ -5,7 +5,7 @@ class Quotes extends React.Component {
 
 	state = {
 
-		qoutes : []
+		persons: [],
 
 	};
 
@@ -13,15 +13,15 @@ class Quotes extends React.Component {
 		axios.get('https://jsonplaceholder.typicode.com/users')
 		.then(res => {
 			console.log(res);
-			this.setState({ quotes : res.data });
+			this.setState({ persons : res.data });
 		})
 	}
 
 	render() {
 		return (
 				<ul>
-					{this.state.quotes.map(quote => <li>{quote.name}</li>)}
-				</ul>,
+					{this.state.persons.map(person => <li>{person.name}</li>)}
+				</ul>
 		)		
 	}
 }
