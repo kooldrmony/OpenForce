@@ -23,7 +23,7 @@ class Quotes extends React.Component {
 				
 				axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
 					.then(function (response) {
-						//currently logging the response in the console.
+						//currently logging the response in the console
 						console.log(response.data[0]);
 	 				})
 					.catch(function (error) {
